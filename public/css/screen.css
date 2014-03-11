@@ -1,0 +1,116 @@
+body {
+  background-image: url(../images/bg.png);
+  background-repeat: repeat-x;
+  margin: 0px;
+  padding: 0px;
+  font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue"
+  color: #555;
+  background-color: #d4d4d4;
+  line-height: 1.5em;
+  color: #222;
+}
+
+.action .btn {
+  font-size: 15pt;
+}
+
+.action .btn img {
+  margin: 0px 7px;
+}
+
+#mce-EMAIL {
+  font-size: 15pt;
+  height: 40px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #555;
+  font-family: "Helvetica Neue";
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+ul {
+  font-size: 1.3em;
+}
+
+li {
+  color: black;
+  height: 1.8em;
+}
+
+.container {
+  width: 720px;
+}
+
+#header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#container {
+  width: 760px;
+  margin: 0 auto;
+}
+
+.chunktext p {
+  text-align: justify;
+  line-height: 1.5em;
+  color: #222;
+  font-size: 1.2em;
+}
+
+#actions .action {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.action .btn {
+  display: block;
+}
+
+#mc_embed_signup input.email {
+  width: 95%;
+}
+
+#mc_embed_signup h2 {
+  margin-top: 0px;
+}
+
+#mc_embed_signup {
+  background-color: #eee;
+  padding: 20px 10px;
+  -webkit-border-radius: 6px;
+  border: 2px solid #bbb;
+  margin-bottom: 35px;
+}
+#mc_embed_signup label {
+  font-size: 1.3em;
+}
+
+#mc-embedded-subscribe-form {
+  margin: 0px;
+  padding: 0px;
+}
+
+.round-block {
+  background-color: #eee;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 6px;
+}
+
+#video {
+  text-align: center;
+}

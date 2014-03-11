@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Big Fat Rails</title>
+    <!--<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <script type="text/javascript" src="media/com/js/swfobject/swfobject.js"></script>
+    <script type="text/javascript">
+
+      var flashvars = {};
+      var params = {};
+
+      params.bgcolor = "#media000000";
+      params.allowscriptaccess = "always";
+
+      flashvars.videoPath = "media/movie.f4v";
+      flashvars.posterPath = "media/com/poster/myPosterFrame.jpg";
+      flashvars.skinPath = "media/com/skin/skin.swf";
+
+      var stageW =myPosterFrame 640;
+      var stageH = 400;
+
+      var attributes = {};
+      attributes.id = "flashcontent";
+
+      swfobject.embedSWF("media/player.swf", "flashcontenttent", stageW, stageH, "9.0.0", false, flashvars, params, attributes);
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28400104-1']);
+      _gaq.push(['_setDomainName', 'bigfatrails.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="row">
+        <div class="span12">
+          <a href="/"><img src="images/logo.png" alt="big fat rails - design web apps with tools you probably have around the home"/></a>
+        </div>
+      </div>
+      <h1>Learn Ruby on Rails 3.2</h1>
+      <div id="content" class="row">
+        <div class="chunktext span7">
+          <p>
+          Big Fat Rails is a book designed around teaching Ruby on Rails in a precept upon precept fashion.
+          Learning a little at a time and building in complexity as the book moves forward. Both theory and 
+          practice driving your knowledge.
+          </p>
+          <p>
+          If you are a beginner and looking to learn Ruby on Rails, the purpose of this book is to simply
+          get you there in small, manageable steps.
+          </p>
+          <p class="round-block">
+          This book is available in many formats including online, PDF, Epub, and Mobi. These versions are
+          automatically generated and versioned from the latest manuscript. If you experience any issues please
+          <a href="mailto:mitch@bigfatrails.com">let me know.</a>
+          </p>
+        </div>
+        <div id="actions" class="span5">
+
+          <div class="action">
+            <a href="http://www.bigfatrails.com/book" class='btn large'>Read It Online</a>
+            <small>Free Under Creative Commons</small>
+          </div>
+
+          <div class="action">
+            <a href="ebooks/<%= get_pdf %>" class='btn large'><img src="images/document-pdf.png"/>PDF</a>
+            <small><%= get_pdf %></small>
+          </div>
+
+          <div class="action">
+            <a href="ebooks/<%= get_epub %>" class='btn large'><img src="images/document-epub.png"/>EPUB</a>
+            <small><%= get_epub %></small>
+          </div>
+
+          <div class="action">
+            <a href="ebooks/<%= get_mobi %>" class='btn large'><img src="images/document-mobi.png"/>Mobi</a>
+            <small><%= get_mobi %></small>
+          </div>
+
+          <div class="action">
+            <a href="#" class='btn large disabled'>Watch the screencasts</a>
+            <small>Not Yet Available</small>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div id="mc_embed_signup">
+            <h2>Get updates on the book and screencasts</h2>
+              <form action="http://mentalbrew.us4.list-manage.com/subscribe/post?u=67adc842b20f88f183f138ec6&amp;id=9db8406f89" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-stacked" target="_blank">
+                <div class="clearfix">
+                  <div class="input">
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                  </div>
+                </div>
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn large">
+              </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <h2>Quick Introduction</h2>
+          <div id="video">
+            <object type="application/x-shockwave-flash" id="flashcontent" data="media/player.swf" width="640" height="400" style="visibility: visible; "><param name="bgcolor" value="#000000"><param name="allowscriptaccess" value="always"><param name="flashvars" value="videoPath=movie.f4v&amp;posterPath=media/com/poster/myPosterFrame.jpg&amp;skinPath=media/com/skin/skin.swf"></object>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <h2>Build an app from start to finish. What will be learned...</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span6">
+          <ul>
+            <li>Ruby on Rails 3.2</li>
+            <li>Rails Asset Pipeline</li>
+            <li>Git basics and workflow</li>
+            <li>MVC - Model/View/Controller</li>
+            <li>How the HTTP protocol works</li>
+            <li>... and more</li>
+          </ul>
+        </div>
+        <div class="span6">
+          <ul>
+            <li>TDD/BDD w/ RSpec and Cucumber</li>
+            <li>Build Your Own Authentication</li>
+            <li>Active Record</li>
+            <li>Database Migrations</li>
+            <li>Application Deployment</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 chunktext">
+          <h2>Why Another Book On Rails?</h2>
+          <p>
+          There are many resources out there for learning Rails. I've used many myself. The
+          reason to add one more to an already long list may seem needless at best and stupid at worst.
+          The driving factor is simply this: The more resources available to the beginner the 
+          better chance they have to become proficient at the subject.
+          </p>
+          <p>
+          When I'm learning something new I always find several resources to learn from. Often buying
+          many books on the subject. Each resource provides a different point of view, teaching method,
+          or simply a format which I learn better from. It is my intention to provide another resource 
+          that may help others better understand everything available to them.
+          </p>
+          <p>The following is a list of other resources you may find helpful in learning Ruby on Rails:</p>
+          <ul>
+            <li><a href="http://ruby.railstutorial.org/">Rails Tutorial</a></li>
+            <li><a href="http://railsforzombies.org/">Rails for Zombies</a></li>
+            <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 chunktext">
+          <h2>Who</h2>
+          <p>My name is Mitch Guthrie. I'm a full time web developer. My blog can be found at <a href="http://www.mentalbrew.com">Mentalbrew</a> 
+          and you can follow me on Twitter <a href="http://twitter.com/mentalbrew">@mentalbrew</a>.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 chunktext">
+          <h2>Credits</h2>
+          <small>The chicken and egg logo are from the artwork titled Paradox by Carlos Navas. Used with permission.</small>
+          <small>The music for the screencasts is Slumlord by Lo Tag Blanco and licensed under Creative Commons.</small>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

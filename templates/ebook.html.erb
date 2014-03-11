@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Big Fat Rails</title>
+    <!--<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28400104-1']);
+      _gaq.push(['_setDomainName', 'bigfatrails.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="row">
+        <div class="span12">
+          <a href="/"><img src="images/logo.png" alt="big fat rails - design web apps with tools you probably have around the home"/></a>
+        </div>
+      </div>
+      <h1>Download Big Fat Rails</h1>
+      <div id="content" class="row">
+        <div class="chunktext span7">
+          <p>This book is currently and work in progress and many things will most likely change
+          during the course of its completion. Feedback is greatly encouraged.</p>
+        </div>
+        <div id="actions" class="span5">
+
+          <div class="action">
+            <a href="ebooks/<%= get_pdf %>" class='btn large'><img src="images/document-pdf.png"/>PDF</a>
+            <small><%= get_pdf %></small>
+          </div>
+
+          <div class="action">
+            <a href="ebooks/<%= get_epub %>" class='btn large'><img src="images/document-epub.png"/>EPUB</a>
+            <small><%= get_epub %></small>
+          </div>
+
+          <div class="action">
+            <a href="ebooks/<%= get_mobi %>" class='btn large'><img src="images/document-mobi.png"/>Mobi</a>
+            <small><%= get_mobi %></small>
+          </div>
+
+          <div class="action">
+            <a href="#" class='btn large disabled'>Watch the screencasts</a>
+            <small>Not Yet Available</small>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div id="mc_embed_signup">
+            <h2>Get updates on the book and screencasts</h2>
+              <form action="http://mentalbrew.us4.list-manage.com/subscribe/post?u=67adc842b20f88f183f138ec6&amp;id=9db8406f89" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-stacked" target="_blank">
+                <div class="clearfix">
+                  <div class="input">
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                  </div>
+                </div>
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn large">
+              </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 chunktext">
+          <h2>Who</h2>
+          <p>My name is Mitch Guthrie. I'm a full time web developer. My blog can be found at <a href="http://www.mentalbrew.com">Mentalbrew</a> 
+          and you can follow me on Twitter <a href="http://twitter.com/mentalbrew">@mentalbrew</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
