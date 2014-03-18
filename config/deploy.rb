@@ -49,7 +49,7 @@ namespace "bfr" do
   end
 
   task :link_html_dir, :roles => :app do
-    run "mkdir #{shared_path}/book && cp #{release_path}/build/html/* #{shared_path}/book -r"
+    run "mkdir #{release_path}/public/book && cp #{release_path}/build/html/* #{shared_path}/book -r"
   end
 end
 
@@ -61,3 +61,4 @@ after 'deploy:update_code', 'bfr:build_pdf'
 after 'deploy:update_code', 'bfr:build_epub'
 after 'deploy:update_code', 'bfr:build_mobi'
 after 'deploy:update_code', 'bfr:generate_ebook_page'
+after 'deploy:update_code', 'bfr:link_html_dir'
