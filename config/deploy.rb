@@ -1,6 +1,6 @@
 set :application, "bigfatrails-book"
 set :repository,  "git@github.com:bigfatrails/book.git"
-
+set :branch, "re-release"
 set :scm, :git
 set :deploy_via, :copy
 set :copy_strategy, :export
@@ -46,6 +46,10 @@ namespace "bfr" do
 
   task :generate_ebook_page, :roles => :app do
     run "cd #{release_path} && ./scripts/generate_ebook_page.rb"
+  end
+
+  task :link_html_dir, :roles => :app do
+    run "mkdir #{shared_path}/book && cp #{release_path}/build/html/* #{shared_path}/book -r"
   end
 end
 

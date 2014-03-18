@@ -20,3 +20,8 @@ echo "You also need ebook-convert for the mobi generation (kindle)"
 sudo apt-get install calibre
 
 echo "calibre installed for ebook-convert"
+
+echo "You also need the Microsoft Truetype fonts."
+sudo apt-get install ttf-mscorefonts-installer
+
+echo "installed ttf-mscorefonts-installer"
