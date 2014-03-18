@@ -1,19 +1,19 @@
 set :application, "bigfatrails-book"
-set :repository,  "git@git.mentalbrew.com:bigfatrails-book.git"
+set :repository,  "git@github.com:bigfatrails/book.git"
 
 set :scm, :git
 set :deploy_via, :copy
 set :copy_strategy, :export
 
-set :user, 'vlad'
-set :group, 'vlad'
+set :user, 'jrg'
+set :group, 'jrg'
 
-set :deploy_to, '/srv/deployment/bigfatrails-book'
+set :deploy_to, '/var/www/bfr'
 set :use_sudo, false
 
-role :web, "macgyver.mentalbrew.com"                          # Your HTTP server, Apache/etc
-role :app, "macgyver.mentalbrew.com"                          # This may be the same as your `Web` server
-role :db,  "macgyver.mentalbrew.com", :primary => true # This is where Rails migrations will run
+role :web, "shadowfax.armyofminions.com"                          # Your HTTP server, Apache/etc
+role :app, "shadowfax.armyofminions.com"                          # This may be the same as your `Web` server
+role :db,  "shadowfax.armyofminions.com", :primary => true # This is where Rails migrations will run
 
 namespace "bfr" do
   task :create_build_dirs, :roles => :app do
