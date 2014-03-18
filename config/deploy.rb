@@ -49,7 +49,7 @@ namespace "bfr" do
   end
 
   task :link_html_dir, :roles => :app do
-    run "mkdir #{release_path}/public/book && cp #{release_path}/build/html/* #{shared_path}/book -r"
+    run "mkdir #{release_path}/public/book && cp #{release_path}/build/html/* #{release_path}/book -r"
   end
 end
 
